@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media screen and (max-width: 640px) {
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .glassmorphism {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .glassmorphism {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
