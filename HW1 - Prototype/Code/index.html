@@ -107,14 +107,14 @@
         </div>
       </nav>
       <main class="container mx-auto p-6 ">
-        <h1 class="text-4xl font-bold mb-8 gradient-text">Your Crypto Portfolio</h1>
+        <h1 class="text-4xl font-bold mb-8 gradient-text">Your Crypto Portfolio Tracker</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Total Balance Card -->
           <div
             class="glassmorphism p-6 border rounded-lg border-gray-200 dark:border-gray-700"
           >
             <h2 class="text-xl font-semibold mb-4">Total Balance</h2>
-            <p class="text-4xl font-bold gradient-text">$<span id="totalBalance">80,300</span></p>
+            <p class="text-4xl font-bold gradient-text">$<span id="totalBalance">35,300</span></p>
             <p class="text-green-500 dark:text-green-400 mt-2">+$945.78 (1.2%)</p>
             <div class="w-full h-32 mt-4">
               <canvas id="performanceChart"></canvas>
@@ -339,7 +339,7 @@
         },
         plugins: [ChartDataLabels],
       });
-      // Top Assets - Fake Data
+      // Top Assets
       const topAssetsElement = document.getElementById('topAssets');
       const topAssetsData = [
         { name: 'Bitcoin', price: '$43,200', change: '+2.1%' },
@@ -361,7 +361,7 @@
           </div>`;
         topAssetsElement.appendChild(li);
       });
-      // Market Overview - Fake Data
+      // Market Overview
       const marketOverviewElement = document.getElementById('priceUpdates');
       const marketOverviewData = [
         { name: 'Bitcoin', price: '$43,200', change: '+2.1%' },
