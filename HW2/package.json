@@ -21,7 +21,7 @@
     "chart.js": "^4.4.3",
     "chartjs-plugin-datalabels": "^2.2.0",
     "cryptocurrency-icons": "^0.18.1",
-    "ethers": "^5.5.4",
+    "ethers": "^6.13.5",
     "react": "^18.3.1",
     "react-alice-carousel": "^2.9.1",
     "react-chartjs-2": "^5.2.0",
