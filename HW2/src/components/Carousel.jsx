@@ -63,11 +63,11 @@ const Carousel = () => {
                   theme === "dark" ? "bg-gray-800" : "bg-white"
                 }`}
               >
-                
-                { <img 
-                     src={coin.image} 
-                     alt={coin.name} 
-                     className="h-10 w-10 mb-2 mx-auto" 
+
+                { <img
+                     src={coin.image}
+                     alt={coin.name}
+                     className="h-10 w-10 mb-2 mx-auto"
                    /> }
 
                 {/* Coin Name + Symbol */}

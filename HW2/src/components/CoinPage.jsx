@@ -70,7 +70,7 @@ const CoinPage = () => {
         <Typography variant="body1">
           24h Low: ${coinData.market_data.low_24h.usd}
         </Typography>
-        
+
       </div>
     </div>
   );

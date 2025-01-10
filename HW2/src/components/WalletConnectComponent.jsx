@@ -11,7 +11,7 @@ export function WalletConnectComponent({ handleConnect }) {
     if (!isConnected){
       handleConnect("", "",false);
     }
-  }, [isConnected, address, chain]); 
+  }, [isConnected, address, chain]);
 
   return (
     <div className="flex gap-5">

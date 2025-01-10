@@ -5,8 +5,7 @@ export const getUrlString = (key, operation, walletAddress) => {
         'Ethereum': 'https://api.ethplorer.io/',
         'BNB Smart Chain': 'https://api.binplorer.com/'
       };
-    
+
     const baseUrl = urlMappings[key];
     return `${baseUrl}${operation}/${walletAddress}?apiKey=${ethploroerAPIKey}`;
   };
-  

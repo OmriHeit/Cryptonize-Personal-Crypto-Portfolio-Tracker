@@ -19,7 +19,7 @@ function CryptoIcon({ coinId }) {
         setIconUrl(null); // Set iconUrl to null in case of an error
       }
     }
-    
+
     fetchCoinDetails();
   }, [coinId]);
 

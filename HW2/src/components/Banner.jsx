@@ -21,16 +21,16 @@ function Banner() {
             Personal Crypto<span className={theme === 'dark' ? "text-white" : "text-black"}> Portfolio Tracker</span>
           </h2>
         </div>
-        
+
         <div className="w-full flex justify-center items-center mb-6">
           <Carousel />
         </div>
-        
+
         <div className="max-w-4xl mx-auto mb-8">
           <h3
             className={`${theme === 'dark' ? "text-gray-300" : "text-gray-700"} text-xl md:text-2xl capitalize font-montserrat`}
           >
-            Connect Your Hardware Wallet, Binance, Coinbase, MetaMask, Trust Wallet, And Any Other Crypto Platforms To CryptoTrack In Just A Few Clicks.
+            Connect Your Hardware Wallet, Binance, Coinbase, MetaMask, Trust Wallet, And Any Other Crypto Platforms To Cryptonize In Just A Few Clicks.
           </h3>
         </div>
       </div>

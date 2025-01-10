@@ -4,7 +4,7 @@ import TransactionTable from './TransactionTable';
 import TotalBalanceChart from './TotalBalanceChart';
 import { ThemeProvider } from './ThemeContext';
 import TabButtons from './MarketNavbar';
-import { getUrlString } from './utils'; 
+import { getUrlString } from './utils';
 import BestPerformingTable from './BestPerformingTable';
 import TransactionStats from './feesTable'
 
@@ -35,7 +35,7 @@ function WalletData({wallet}) {
               rawBalance: json.ETH.rawBalance
             };
             const filteredTokens = [
-              chainToken, 
+              chainToken,
               ...(json.tokens ? json.tokens.filter(token => token.tokenInfo.price !== false) : [])
             ];
             setTokens(filteredTokens);
@@ -45,12 +45,12 @@ function WalletData({wallet}) {
             setLoading(false);
           }
         };
-    
+
         if (wallet.Address) {
           fetchData();
         }
       }, [wallet.Address, wallet.Network]);
-      
+
       if (loading) return <div>Loading...</div>;
       if (error) return <div>Error: {error.message}</div>;
 
@@ -61,20 +61,16 @@ function WalletData({wallet}) {
           <TotalBalanceChart tokens={Tokens}/>
           {/* <TransactionStats wallet={wallet}/> */}
          </div>
-         <div> 
-    
+         <div>
           <div>
             <TabButtons setActiveTab={setActiveTab} />
             {activeTab === 'assets' && <AssetsTable tokens = {Tokens}/>}
             {activeTab === 'transactions' && <TransactionTable wallet={wallet}/>}
             {activeTab === 'BestPerforming' && <BestPerformingTable tokens = {Tokens}/>}
           </div>
-  
-
         </div>
         </>
         );
-    };
+    }
 
 export default WalletData;
-

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Tooltip } from 'react-tippy';
 import 'react-tippy/dist/tippy.css';
-import { getUrlString } from './utils'; 
+import { getUrlString } from './utils';
 import { ThemeContext } from './ThemeContext'; // Import ThemeContext
 
 const TransactionTable = ({wallet}) => {
@@ -9,7 +9,7 @@ const TransactionTable = ({wallet}) => {
   const [transactions, setTransactions] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const baseImageUrl = '/node_modules/cryptocurrency-icons/svg/color/'; 
+  const baseImageUrl = '/node_modules/cryptocurrency-icons/svg/color/';
 
   useEffect(() => {
     const fetchTransactions = async () => {
@@ -88,7 +88,7 @@ const TransactionTable = ({wallet}) => {
       </tr>
     );
   };
-  
+
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
 

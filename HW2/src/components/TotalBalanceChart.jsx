@@ -25,7 +25,7 @@ function TotalBalanceChart({ tokens, theme }) {
   const othersBalance = sortedTokens.slice(4).reduce((sum, token) => sum + token.balance, 0);
 
   // Dynamic colors based on the theme
-  const colors = theme === 'dark' ? 
+  const colors = theme === 'dark' ?
     ['#1F77B4', '#FF7F0E', '#2CA02C', '#D62728', '#9467BD'] : // Dark mode colors
     ['#4E79A7', '#F28E2B', '#E15759', '#76B7B2', '#59A14F']; // Light mode colors
 
