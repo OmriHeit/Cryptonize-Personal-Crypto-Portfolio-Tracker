@@ -110,3 +110,9 @@ This project is licensed under the MIT License.
 If you find this project helpful, please give it a ⭐ on GitHub!
 
 Happy Tracking! 🚀
+
+To activate the website, open a CMD terminal from the project's main folder and run:
+1. "npm install"
+   Wait for all modules to be installed.
+2. "npm run dev"
+   Copy and paste the url into yur browser.
